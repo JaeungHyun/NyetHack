@@ -14,8 +14,6 @@ fun main() {
     performCombat()
     performCombat("Ulrich")
     performCombat("Hildr", true)
-
-
 }
 
 private fun formatHealthStatus(healthPoints: Int, isBlessed: Boolean) =
@@ -27,7 +25,7 @@ private fun formatHealthStatus(healthPoints: Int, isBlessed: Boolean) =
         } else {
             "경미한 상처만 있음"
         }
-        in 15..74 -> "많 다친 것 같음"
+        in 15..74 -> "많이 다친 것 같음"
         else -> "최악의 상태임!"
     }
 
